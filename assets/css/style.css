@@ -108,9 +108,10 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .footer .f-wrap {
     flex-direction: column;
+    align-items: start;
   }
 }
 .footer .f-wrap p {
@@ -126,6 +127,12 @@ body {
   padding: 0px 5px;
   border-right: 1px solid #424242;
   line-height: 16px;
+}
+@media (max-width: 991px) {
+  .footer .f-wrap .b-link {
+    border: none;
+    padding-bottom: 10px;
+  }
 }
 
 /*===// end of layouts css === */
@@ -221,6 +228,7 @@ body {
 .epc-banner {
   margin: 30px 0 120px;
   position: relative;
+  min-height: 250px;
 }
 .epc-banner .text {
   position: absolute;
@@ -248,6 +256,15 @@ body {
   font-weight: 300;
   font-size: 26px;
   color: #fff;
+}
+.epc-banner .text .wrap .sub-t {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.epc-banner .text .wrap .contact-over {
+  display: inline-block;
+  color: #ffffff;
+  padding-bottom: 10px;
 }
 
 .mission {
@@ -288,4 +305,49 @@ body {
 }
 .core-value .contacto .contact-btn:hover {
   background: #17a38c;
+}
+
+.contact-form {
+  padding: 60px 0 80px;
+  margin-bottom: 50px;
+  background: #f8f8f8;
+}
+.contact-form .container {
+  max-width: 940px;
+}
+.contact-form .section-heading {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+.contact-form .section-heading::after {
+  background: #000;
+}
+.contact-form h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+.contact-form label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+.contact-form input,
+.contact-form select {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #dddddd;
+  padding: 5px;
+}
+.contact-form .submit-btn {
+  width: 100%;
+  border: 0;
+  background: #000;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */
