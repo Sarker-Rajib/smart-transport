@@ -1,0 +1,36 @@
+.color-ash {
+    color: #5b5b5b;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.section-heading {
+    color: #424242;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 50px;
+        height: 4px;
+        background: #ffb72b;
+    }
+}

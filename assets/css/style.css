@@ -1,0 +1,291 @@
+/*=== abstracts css start === */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+.color-ash {
+  color: #5b5b5b;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.section-heading {
+  color: #424242;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 35px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-heading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 50px;
+  height: 4px;
+  background: #ffb72b;
+}
+
+/*===// end of base css === */
+/*=== layouts css start === */
+.header .navbar-brand {
+  display: inline-block;
+  max-width: 135px;
+}
+.header .navbar-nav .nav-item .nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 16px;
+  margin-right: 15px;
+}
+.header .navbar-nav .nav-item .nav-link:hover {
+  color: #ffb72b;
+}
+.header .navbar-nav .nav-item .nav-link.active {
+  color: #ffb72b;
+}
+.header .navbar-nav img {
+  width: 20px;
+  transition: 0.2s;
+}
+.header .navbar-nav img:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  padding: 40px 0 70px;
+}
+.footer .f-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .footer .f-wrap {
+    flex-direction: column;
+  }
+}
+.footer .f-wrap p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #424242;
+}
+.footer .f-wrap .b-link {
+  color: #424242;
+  font-size: 15px;
+  font-weight: 300;
+  display: inline-block;
+  padding: 0px 5px;
+  border-right: 1px solid #424242;
+  line-height: 16px;
+}
+
+/*===// end of layouts css === */
+/*=== components css start === */
+/*===// end of components css === */
+.banner .banner-wrapper {
+  max-width: 1740px;
+  margin: auto;
+}
+.banner .banner-wrapper .swiper .contents {
+  position: relative;
+  min-height: 650px;
+}
+.banner .banner-wrapper .swiper .contents.first {
+  background: url(../Images/Home/home-banner.png) no-repeat right bottom/cover;
+}
+.banner .banner-wrapper .swiper .contents.second {
+  background: url(../Images/Home/home-banner2.png) no-repeat right bottom/cover;
+}
+.banner .banner-wrapper .swiper .contents.third {
+  background: url(../Images/Home/home-banner.png) no-repeat right bottom/cover;
+}
+.banner .banner-wrapper .swiper .contents .text {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+}
+.banner .banner-wrapper .swiper .contents .text p {
+  font-size: 45px;
+  font-weight: 300;
+  color: #fff;
+}
+.banner .banner-wrapper .swiper .contents .text p span {
+  background: #ffb72b;
+  display: inline-block;
+  padding: 0 5px;
+}
+.banner .banner-wrapper .swiper .swiper-pagination .swiper-pagination-bullet {
+  background: #fff;
+  height: 15px;
+  width: 15px;
+  opacity: 1;
+}
+.banner .banner-wrapper .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  border: 3px solid #ffb72b;
+  outline: 1px solid #fff;
+}
+
+.st-text {
+  max-width: 900px;
+  padding: 55px 10px 80px;
+  margin: auto;
+}
+.st-text p {
+  padding-top: 30px;
+  font-weight: 300;
+  color: #5d5d5d;
+  font-size: 21px;
+}
+.st-text p span {
+  font-weight: 400;
+}
+
+.vehicle {
+  padding: 35px 0;
+  background: #eae8e9;
+}
+
+.benefits {
+  max-width: 1000px;
+  padding: 80px 0 0;
+  margin: auto;
+}
+
+.latest-ev {
+  padding: 80px 0 40px;
+}
+.latest-ev .news-card .headings {
+  padding-top: 15px;
+  min-height: 90px;
+}
+.latest-ev .news-card .headings h6 {
+  font-weight: 400;
+  color: #080808;
+}
+.latest-ev .news-card .brief,
+.latest-ev .news-card .more-link {
+  font-size: 15px;
+  color: #7c7c7c;
+}
+
+.epc-banner {
+  margin: 30px 0 120px;
+  position: relative;
+}
+.epc-banner .text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.epc-banner .text .wrap {
+  background: #0b7060;
+  padding: 75px 80px;
+  max-width: 840px;
+  margin-left: -80px;
+}
+.epc-banner .text .wrap h3 {
+  font-weight: 900;
+  color: #fff;
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+.epc-banner .text .wrap h3 span {
+  font-weight: 300;
+}
+.epc-banner .text .wrap p {
+  font-weight: 300;
+  font-size: 26px;
+  color: #fff;
+}
+
+.mission {
+  background: #e1e0e0;
+  padding: 60px 0;
+}
+.mission .heading {
+  color: #0b7060;
+  font-size: 46px;
+  font-weight: 900;
+  padding-bottom: 30px;
+}
+.mission .heading span {
+  font-weight: 300;
+}
+.mission p {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.core-value {
+  padding: 85px 0 70px;
+}
+.core-value .contacto {
+  padding-top: 80px;
+}
+.core-value .contacto p {
+  font-size: 26px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+.core-value .contacto .contact-btn {
+  background: #0b7060;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 25px;
+}
+.core-value .contacto .contact-btn:hover {
+  background: #17a38c;
+}/*# sourceMappingURL=style.css.map */

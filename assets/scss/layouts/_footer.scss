@@ -1,0 +1,29 @@
+.footer {
+    padding: 40px 0 70px;
+
+    .f-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width:767px) {
+            flex-direction: column;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: 300;
+            color: #424242;
+        }
+
+        .b-link {
+            color: #424242;
+            font-size: 15px;
+            font-weight: 300;
+            display: inline-block;
+            padding: 0px 5px;
+            border-right: 1px solid #424242;
+            line-height: 16px;
+        }
+    }
+}

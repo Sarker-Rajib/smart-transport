@@ -1,0 +1,36 @@
+.header {
+    .navbar-brand {
+        display: inline-block;
+        max-width: 135px;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 300;
+                line-height: 16px;
+                margin-right: 15px;
+
+                &:hover {
+                    color: #ffb72b;
+                }
+
+                &.active {
+                    color: #ffb72b;
+                }
+            }
+        }
+
+        img {
+            width: 20px;
+            transition: 0.2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

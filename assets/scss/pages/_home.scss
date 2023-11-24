@@ -1,0 +1,108 @@
+.banner {
+    .banner-wrapper {
+        max-width: 1740px;
+        margin: auto;
+
+        .swiper {
+            .contents {
+                position: relative;
+                min-height: 650px;
+
+                &.first {
+                    background: url(../Images/Home/home-banner.png) no-repeat right bottom/cover;
+                }
+
+                &.second {
+                    background: url(../Images/Home/home-banner2.png) no-repeat right bottom/cover;
+                }
+
+                &.third {
+                    background: url(../Images/Home/home-banner.png) no-repeat right bottom/cover;
+                }
+
+                .text {
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    top: 50%;
+
+                    p {
+                        font-size: 45px;
+                        font-weight: 300;
+                        color: #fff;
+
+                        span {
+                            background: #ffb72b;
+                            display: inline-block;
+                            padding: 0 5px;
+                        }
+                    }
+                }
+            }
+
+            .swiper-pagination {
+                .swiper-pagination-bullet {
+                    background: #fff;
+                    height: 15px;
+                    width: 15px;
+                    opacity: 1;
+
+                    &.swiper-pagination-bullet-active {
+                        border: 3px solid #ffb72b;
+                        outline: 1px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.st-text {
+    max-width: 900px;
+    padding: 55px 10px 80px;
+    margin: auto;
+
+    p {
+        padding-top: 30px;
+        font-weight: 300;
+        color: #5d5d5d;
+        font-size: 21px;
+
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+.vehicle {
+    padding: 35px 0;
+    background: #eae8e9;
+}
+
+.benefits {
+    max-width: 1000px;
+    padding: 80px 0 0;
+    margin: auto;
+}
+
+.latest-ev {
+    padding: 80px 0 40px;
+
+    .news-card {
+        .headings {
+            padding-top: 15px;
+            min-height: 90px;
+
+            h6 {
+                font-weight: 400;
+                color: #080808;
+            }
+        }
+
+        .brief,
+        .more-link {
+            font-size: 15px;
+            color: #7c7c7c;
+        }
+    }
+}
