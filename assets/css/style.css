@@ -134,6 +134,11 @@ body {
     padding-bottom: 10px;
   }
 }
+@media (max-width: 767px) {
+  .footer {
+    padding: 40px 0;
+  }
+}
 
 /*===// end of layouts css === */
 /*=== components css start === */
@@ -171,6 +176,26 @@ body {
   display: inline-block;
   padding: 0 5px;
 }
+@media (max-width: 991px) {
+  .banner .banner-wrapper .swiper .contents {
+    min-height: 400px;
+  }
+  .banner .banner-wrapper .swiper .contents.first {
+    background: url(../Images/Home/home-banner.png) no-repeat center center/cover;
+  }
+  .banner .banner-wrapper .swiper .contents.second {
+    background: url(../Images/Home/home-banner2.png) no-repeat center center/cover;
+  }
+  .banner .banner-wrapper .swiper .contents.third {
+    background: url(../Images/Home/home-banner.png) no-repeat center center/cover;
+  }
+  .banner .banner-wrapper .swiper .contents .text {
+    top: 35%;
+  }
+  .banner .banner-wrapper .swiper .contents .text p {
+    font-size: 30px;
+  }
+}
 .banner .banner-wrapper .swiper .swiper-pagination .swiper-pagination-bullet {
   background: #fff;
   height: 15px;
@@ -196,6 +221,14 @@ body {
 .st-text p span {
   font-weight: 400;
 }
+@media (max-width: 767px) {
+  .st-text {
+    padding: 30px 10px 40px;
+  }
+  .st-text p {
+    font-size: 20px;
+  }
+}
 
 .vehicle {
   padding: 35px 0;
@@ -206,6 +239,14 @@ body {
   max-width: 1000px;
   padding: 80px 0 0;
   margin: auto;
+}
+@media (max-width: 767px) {
+  .benefits {
+    padding: 40px 0 0;
+  }
+  .benefits img {
+    max-width: 100px;
+  }
 }
 
 .latest-ev {
@@ -223,6 +264,11 @@ body {
 .latest-ev .news-card .more-link {
   font-size: 15px;
   color: #7c7c7c;
+}
+@media (max-width: 767px) {
+  .latest-ev {
+    padding: 40px 0;
+  }
 }
 
 .epc-banner {
@@ -266,6 +312,28 @@ body {
   color: #ffffff;
   padding-bottom: 10px;
 }
+@media (max-width: 767px) {
+  .epc-banner {
+    margin: 20px 0 60px;
+    height: 380px;
+  }
+  .epc-banner.cnct {
+    background: url(../Images/contact-bann-img.png) top right/cover;
+  }
+  .epc-banner.abt {
+    background: url(../Images/about-banner-img.png) top right/cover;
+  }
+  .epc-banner .text .wrap {
+    margin: 0;
+    padding: 20px;
+  }
+  .epc-banner .text .wrap h3 {
+    font-size: 35px;
+  }
+  .epc-banner .text .wrap p {
+    font-size: 18px;
+  }
+}
 
 .mission {
   background: #e1e0e0;
@@ -283,6 +351,17 @@ body {
 .mission p {
   font-weight: 300;
   font-size: 20px;
+}
+@media (max-width: 767px) {
+  .mission {
+    padding: 40px 0;
+  }
+  .mission .heading {
+    font-size: 35px;
+  }
+  .mission p {
+    font-size: 18px;
+  }
 }
 
 .core-value {
@@ -305,6 +384,17 @@ body {
 }
 .core-value .contacto .contact-btn:hover {
   background: #17a38c;
+}
+@media (max-width: 767px) {
+  .core-value {
+    padding: 45px 0 30px;
+  }
+  .core-value .contacto {
+    padding-top: 40px;
+  }
+  .core-value .contacto p {
+    font-size: 20px;
+  }
 }
 
 .contact-form {
@@ -350,4 +440,9 @@ body {
   font-weight: 300;
   font-size: 16px;
   padding: 20px;
+}
+@media (max-width: 767px) {
+  .contact-form {
+    padding: 40px 0 60px;
+  }
 }/*# sourceMappingURL=style.css.map */

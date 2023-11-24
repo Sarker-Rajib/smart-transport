@@ -45,6 +45,34 @@
             }
         }
     }
+
+    @media(max-width: 767px) {
+        margin: 20px 0 60px;
+        height: 380px;
+
+        &.cnct {
+            background: url(../Images/contact-bann-img.png) top right/cover;
+        }
+
+        &.abt {
+            background: url(../Images/about-banner-img.png) top right/cover;
+        }
+
+        .text {
+            .wrap {
+                margin: 0;
+                padding: 20px;
+
+                h3 {
+                    font-size: 35px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }
 
 .mission {
@@ -60,11 +88,25 @@
         span {
             font-weight: 300;
         }
+
     }
 
     p {
         font-weight: 300;
         font-size: 20px;
+    }
+
+
+    @media(max-width: 767px) {
+        padding: 40px 0;
+
+        .heading {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 18px;
+        }
     }
 }
 
@@ -91,6 +133,19 @@
                 background: #17a38c;
             }
         }
+    }
+
+    @media(max-width: 767px) {
+        padding: 45px 0 30px;
+
+        .contacto {
+            padding-top: 40px;
+
+            p {
+                font-size: 20px;
+            }
+        }
+
     }
 }
 
@@ -135,7 +190,6 @@
         padding: 5px;
     }
 
-
     .submit-btn {
         width: 100%;
         border: 0;
@@ -144,5 +198,9 @@
         font-weight: 300;
         font-size: 16px;
         padding: 20px;
+    }
+
+    @media(max-width: 767px) {
+        padding: 40px 0 60px;
     }
 }
