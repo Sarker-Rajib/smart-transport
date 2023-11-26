@@ -152,13 +152,14 @@
                 z-index: 1;
             }
 
-
-            &:hover {
-                transform: translateX(-50%) scale(1.2);
-            }
-
             @media(max-width: 767px) {
                 font-size: 10px;
+            }
+        }
+
+        &:hover {
+            p {
+                transform: translateX(-50%) scale(1.2);
             }
         }
     }

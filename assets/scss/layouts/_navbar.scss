@@ -1,7 +1,16 @@
 .header {
+    overflow: hidden;
+
     .navbar-brand {
         display: inline-block;
-        max-width: 135px;
+        width: 135px;
+        height: 90px;
+        overflow: hidden;
+
+        .brand-icon {
+            max-width: 215px;
+            margin: -45px -40px -40px;
+        }
     }
 
     .navbar-nav {
@@ -20,6 +29,10 @@
 
                 &.active {
                     color: #ffb72b;
+                }
+
+                @media(max-width:767px) {
+                    margin-right: 0;
                 }
             }
         }
