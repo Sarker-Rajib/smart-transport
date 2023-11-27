@@ -25,11 +25,12 @@
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/Images/logo.svg" alt="logo" class="img-fluid brand-icon brand-icon">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                    aria-label="Toggle navigation">
+
+                <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                         <li class="nav-item">
@@ -59,6 +60,46 @@
                     </ul>
                 </div>
             </nav>
+        </div>
+
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <a href="index.html" class="offcanvas-title" id="offcanvasRightLabel">
+                    <img width="40" src="assets/Images/logo-icon.svg" alt="i">
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">E-vehicle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">contact us</a>
+                        </li>
+                        <li class="ms-lg-2">
+                            <ul class="p-0 d-flex">
+                                <li class="me-2"><a href="#"><img
+                                            src="assets/Images/SVGs/SocialiconsPNGs/twittercopy.svg" alt="icon"></a>
+                                </li>
+                                <li class="me-2"><a href="#"><img src="assets/Images/SVGs/SocialiconsPNGs/tiktok.svg"
+                                            alt="icon"></a>
+                                </li>
+                                <li class="me-2"><a href="#"><img src="assets/Images/SVGs/SocialiconsPNGs/instagram.svg"
+                                            alt="icon"></a>
+                                </li>
+                                <li><a href="#"><img src="assets/Images/SVGs/SocialiconsPNGs/linkedin.svg"
+                                            alt="icon"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <!-- Header ends -->
@@ -145,36 +186,38 @@
     <!-- benefits of electric vehicle -->
     <section class="benefits text-center">
         <h3 class="section-heading">Benefits of Electric Vehicles</h3>
-        <div class="row g-2">
-            <div class="col">
-                <div class="icon-wrap">
-                    <img src="assets/Images/SVGs/homepage-SVGicons/less_maintenance.svg" alt="eca">
+        <div class="container">
+            <div class="row gx-md-2 gy-3 justify-content-center">
+                <div class="col-4 col-md">
+                    <div class="icon-wrap">
+                        <img src="assets/Images/SVGs/homepage-SVGicons/less_maintenance.svg" alt="eca">
+                    </div>
+                    <p class="font-light color-ash pt-3 pb-2">Less Maintenance</p>
                 </div>
-                <p class="font-light color-ash pt-3 pb-2">Less Maintenance</p>
-            </div>
-            <div class="col">
-                <div class="icon-wrap">
-                    <img src="assets/Images/SVGs/homepage-SVGicons/LessNoisePollution.svg" alt="eca">
+                <div class="col-4 col-md">
+                    <div class="icon-wrap">
+                        <img src="assets/Images/SVGs/homepage-SVGicons/LessNoisePollution.svg" alt="eca">
+                    </div>
+                    <p class="font-light color-ash pt-3 pb-2">Less Noise Pollution</p>
                 </div>
-                <p class="font-light color-ash pt-3 pb-2">Less Noise Pollution</p>
-            </div>
-            <div class="col">
-                <div class="icon-wrap">
-                    <img src="assets/Images/SVGs/homepage-SVGicons/ReducesFuelCosts.svg" alt="eca">
+                <div class="col-4 col-md">
+                    <div class="icon-wrap">
+                        <img src="assets/Images/SVGs/homepage-SVGicons/ReducesFuelCosts.svg" alt="eca">
+                    </div>
+                    <p class="font-light color-ash pt-3 pb-2">Reduces Fuel Costs</p>
                 </div>
-                <p class="font-light color-ash pt-3 pb-2">Reduces Fuel Costs</p>
-            </div>
-            <div class="col">
-                <div class="icon-wrap">
-                    <img src="assets/Images/SVGs/homepage-SVGicons/ReducesCO2Emissions.svg" alt="eca">
+                <div class="col-4 col-md">
+                    <div class="icon-wrap">
+                        <img src="assets/Images/SVGs/homepage-SVGicons/ReducesCO2Emissions.svg" alt="eca">
+                    </div>
+                    <p class="font-light color-ash pt-3 pb-2">Reduces CO2 Emissions</p>
                 </div>
-                <p class="font-light color-ash pt-3 pb-2">Reduces CO2 Emissions</p>
-            </div>
-            <div class="col">
-                <div class="icon-wrap">
-                    <img src="assets/Images/SVGs/homepage-SVGicons/ImprovesAirQuality.svg" alt="eca">
+                <div class="col-4 col-md">
+                    <div class="icon-wrap">
+                        <img src="assets/Images/SVGs/homepage-SVGicons/ImprovesAirQuality.svg" alt="eca">
+                    </div>
+                    <p class="font-light color-ash pt-3 pb-2">Improves Air Quality</p>
                 </div>
-                <p class="font-light color-ash pt-3 pb-2">Improves Air Quality</p>
             </div>
         </div>
     </section>
@@ -185,7 +228,7 @@
             <div class="top-head text-center">
                 <h3 class="section-heading">Latest EV Developments in Dubai, UAE</h3>
             </div>
-            <div class="row g-2 gx-3">
+            <div class="row gy-4 gx-md-3">
                 <div class="col-md-6 col-lg-4">
                     <div class="news-card">
                         <img src="assets/Images/Home/ev1.png" alt="ev1" class="img-fluid">
@@ -195,7 +238,7 @@
                                 in Dubai during its 74th meeting.
                             </h6>
                         </div>
-                        <p class="brief pb-3">
+                        <p class="brief pb-2 pb-md-3">
                             HH Sheikh Ahmed bin Saeed Al Maktoum, Chairman of the Dubai Supreme Council..
                         </p>
                         <a href="#" class="more-link">Read More</a>
@@ -209,7 +252,7 @@
                                 DEWA launches EV Green Charger User Dashboard
                             </h6>
                         </div>
-                        <p class="brief pb-3">
+                        <p class="brief pb-2 pb-md-3">
                             Dubai Electricity and Water Authority (DEWA) has launched the EV Green Charger…\
                         </p>
                         <a href="#" class="more-link">Read More</a>
@@ -224,7 +267,7 @@
                                 charging points in Dubai
                             </h6>
                         </div>
-                        <p class="brief pb-3">
+                        <p class="brief pb-2 pb-md-3">
                             Dubai Electricity and Water Authority (DEWA) continues to develop the Electric…
                         </p>
                         <a href="#" class="more-link">Read More</a>
@@ -255,7 +298,7 @@
                     </li>
                 </ul>
 
-                <ul class="p-0 d-md-flex align-items-center text-center">
+                <ul class="p-0 d-flex align-items-center">
                     <li><a href="index.html" class="b-link">Home</a></li>
                     <li><a href="about-us.html" class="b-link">About Us</a></li>
                     <li><a href="contact-us.html" class="b-link">Contact Us</a></li>

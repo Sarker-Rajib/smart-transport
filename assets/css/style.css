@@ -131,6 +131,17 @@ body {
   font-weight: 300;
   color: #424242;
 }
+@media (max-width: 767px) {
+  .footer .f-wrap p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media (max-width: 419px) {
+  .footer .f-wrap p {
+    font-size: 13px;
+  }
+}
 .footer .f-wrap .b-link {
   color: #424242;
   font-size: 15px;
@@ -143,10 +154,19 @@ body {
 .footer .f-wrap .b-link:hover {
   color: #0b7060;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .footer .f-wrap .b-link {
-    border: none;
-    padding-bottom: 10px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 419px) {
+  .footer .f-wrap .b-link {
+    font-size: 11px;
+  }
+}
+@media (max-width: 320px) {
+  .footer .f-wrap .b-link {
+    font-size: 9px;
   }
 }
 @media (max-width: 767px) {
@@ -241,7 +261,7 @@ body {
     padding: 30px 10px 40px;
   }
   .st-text p {
-    font-size: 20px;
+    font-size: 19px;
   }
 }
 
@@ -279,6 +299,11 @@ body {
 .vehicle .img-wrap p .text span {
   font-weight: 400;
 }
+@media (max-width: 767px) {
+  .vehicle .img-wrap p .text {
+    font-size: 8px;
+  }
+}
 .vehicle .img-wrap p::after {
   position: absolute;
   content: "";
@@ -291,8 +316,14 @@ body {
   z-index: 1;
 }
 @media (max-width: 767px) {
+  .vehicle .img-wrap p::after {
+    height: 12px;
+    width: 12px;
+  }
+}
+@media (max-width: 767px) {
   .vehicle .img-wrap p {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 .vehicle .img-wrap:hover p {
@@ -317,6 +348,12 @@ body {
 .benefits .icon-wrap img {
   max-width: 35px;
 }
+@media (max-width: 767px) {
+  .benefits .icon-wrap {
+    width: 80px;
+    height: 80px;
+  }
+}
 
 .latest-ev {
   padding: 70px 0 35px;
@@ -329,6 +366,7 @@ body {
   font-weight: 400;
   color: #080808;
   font-size: 14px;
+  padding-bottom: 10px;
 }
 .latest-ev .news-card .brief,
 .latest-ev .news-card .more-link {
@@ -343,6 +381,9 @@ body {
 @media (max-width: 767px) {
   .latest-ev {
     padding: 40px 0;
+  }
+  .latest-ev .news-card .headings {
+    min-height: auto;
   }
 }
 
@@ -525,6 +566,9 @@ body {
   height: 35px;
   border: 1px solid #dddddd;
   padding: 5px;
+}
+.contact-form select {
+  color: #797979;
 }
 .contact-form .submit-btn {
   width: 100%;
